@@ -20,5 +20,3 @@ dev = [
     "ruff>=0.13.0",
 ]
 
-[tool.pytest.ini_options]
-addopts = "--maxfail=1 --cov=richtextjson2typst --cov-report=html"
