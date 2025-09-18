@@ -39,6 +39,17 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' # Seulement sur push master
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        run: pip install uv
+
       - name: Download dist artifact
         uses: actions/download-artifact@v4
         with:
@@ -53,8 +64,19 @@ jobs:
   publish-pypi:
     needs: build
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v') # Seulement si on a créé un tag vX.Y.Z
+    if: github.ref == 'refs/heads/master' # Seulement sur push master
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        run: pip install uv
+
       - name: Download dist artifact
         uses: actions/download-artifact@v4
         with:
