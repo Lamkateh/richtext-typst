@@ -12,12 +12,8 @@ Convert rich text JSON documents (from editors like ProseMirror, Quill, Slate) t
 
 ## Installation
 
-This project requires Python 3.10+ and [uv](https://github.com/astral-sh/uv) for development.
-
-Clone the repo and install dependencies:
-
 ```bash
-uv pip install -e .
+pip install richtext-typst
 ```
 
 ---
@@ -27,7 +23,7 @@ uv pip install -e .
 ### Basic Example
 
 ```python
-from richtextjson2typst import convert
+from richtext_typst import convert
 
 # Example: Quill JSON
 quill_json = {"ops": [{"insert": "Hello", "attributes": {"bold": True}}]}

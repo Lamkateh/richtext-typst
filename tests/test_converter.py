@@ -1,5 +1,6 @@
 import pytest
-from richtext_typst.converter import convert, register_parser
+from richtext_typst import convert
+from richtext_typst.converter import register_parser
 from richtext_typst.base import BaseParser
 from richtext_typst.exceptions import UnsupportedFormatError
 
