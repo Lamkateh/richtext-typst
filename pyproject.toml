@@ -9,6 +9,9 @@ authors = [
 requires-python = ">=3.10"
 dependencies = []
 
+[project.urls]
+Homepage = "https://github.com/Lamkateh/richtext-typst"
+Issues = "https://github.com/Lamkateh/richtext-typst/issues"
 
 [dependency-groups]
 dev = [
