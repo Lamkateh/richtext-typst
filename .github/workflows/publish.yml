@@ -59,7 +59,7 @@ jobs:
       - name: Publish to TestPyPI
         env:
           UV_PYPI_TOKEN: ${{ secrets.TEST_PYPI_API_TOKEN }}
-        run: uv publish --repository testpypi --token $UV_PYPI_TOKEN
+        run: uv publish --publish-url https://test.pypi.org/legacy/ --token $UV_PYPI_TOKEN
 
   publish-pypi:
     needs: build
