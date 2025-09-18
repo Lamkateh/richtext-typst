@@ -3,8 +3,10 @@ name = "richtext-typst"
 dynamic = ["version"]
 description = "Convert Rich Text JSON to Typst"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
-    { name = "Bruno DI LIVIO", email = "bruno.dilivio@gmail.com" }
+    { name = "Bruno DI LIVIO", email = "perruque-gruau-7k@icloud.com" }
 ]
 requires-python = ">=3.10"
 dependencies = []
