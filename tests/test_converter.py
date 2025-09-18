@@ -1,7 +1,7 @@
 import pytest
-from richtextjson2typst.converter import convert, register_parser
-from richtextjson2typst.base import BaseParser
-from richtextjson2typst.exceptions import UnsupportedFormatError
+from richtext_typst.converter import convert, register_parser
+from richtext_typst.base import BaseParser
+from richtext_typst.exceptions import UnsupportedFormatError
 
 
 # --- 1. Tests avec formats natifs ---

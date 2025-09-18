@@ -1,6 +1,6 @@
 import pytest
-from richtextjson2typst.converter import convert
-from richtextjson2typst.exceptions import InvalidFormatError
+from richtext_typst.converter import convert
+from richtext_typst.exceptions import InvalidFormatError
 
 
 # --- Cas Quill JSON invalide ---

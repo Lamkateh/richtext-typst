@@ -1,5 +1,5 @@
 import json
-from richtextjson2typst.converter import convert
+from richtext_typst.converter import convert
 
 
 def test_prosemirror_parser():

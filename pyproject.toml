@@ -1,5 +1,5 @@
 [project]
-name = "richtextjson2typst"
+name = "richtext-typst"
 version = "0.1.0"
 description = "Convert Rich Text JSON to Typst"
 readme = "README.md"
