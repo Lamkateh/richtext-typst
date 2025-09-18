@@ -25,9 +25,16 @@ pip install richtext-typst
 ```python
 from richtext_typst import convert
 
-# Example: Quill JSON
-quill_json = {"ops": [{"insert": "Hello", "attributes": {"bold": True}}]}
-typst = convert(quill_json, "quill")
+# Example: ProseMirror JSON
+prosemirror_json = {
+  "type": "doc",
+  "content": [
+    {"type": "paragraph", "content": [
+      {"type": "text", "text": "Hello", "marks": [{"type": "bold"}]}
+    ]}
+  ]
+}
+typst = convert(prosemirror_json, "prosemirror")
 print(typst)  # Output: *Hello*
 ```
 
