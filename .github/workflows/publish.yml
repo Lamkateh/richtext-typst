@@ -64,7 +64,7 @@ jobs:
   publish-pypi:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' # Seulement sur push master
+    if: startsWith(github.ref, 'refs/tags/v') # Seulement si on a créé un tag vX.Y.Z
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
