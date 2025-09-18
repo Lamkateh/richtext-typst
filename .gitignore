@@ -1,3 +1,6 @@
+tests/data/*.typ
+tests/data/*.pdf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
